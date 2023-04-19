@@ -40,8 +40,17 @@ function sayHi(){
     }
     
 }
+//ver contraseña
+function viewpass() {
 
-
+    let type = document.querySelector("#pass").type
+    if (type === "password") {
+        document.querySelector("#pass").type = "text"
+    }else{
+        document.querySelector("#pass").type = "password"
+    }
+    
+}
 
     // let json = {
     //     //carracteristicas del json 
@@ -68,3 +77,6 @@ function sayHi(){
 
     //para imprimir solo un atributo, llamamos el json y con el punto concatenamos el nombre del atributo
 
+// btn.addEvenListener('click', function () { crear un evento para de esa manera no usar el onclick
+    
+// })
